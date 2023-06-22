@@ -17,10 +17,10 @@ body {
     font-size: 2em;
     display: flex;
     justify-content: center;
+    background-color: red;
 }
 
 .Body {
-    border: 1px solid blue;
     padding: 0.5em;
     margin: 0.5em;
 }
@@ -36,4 +36,69 @@ body {
 #btn-input:hover {
     transition: 2s;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.input-List {
+    display: flex;
+}
+
+.input-List input{
+    width: 90%;
+    font-size: 2em;
+    color: blue;
+}
+
+.addBtn {
+    cursor: pointer;
+    border: solid black;
+    text-align: center;
+    border-radius: 50%;
+    width: 9.5%;
+    font-size: 2em;
+    color: white;
+}
+
+.addBtn:hover {
+    background-color: rgba(120, 102, 102, 0.5);
+}
+
+.list-todo {
+    
+}
+
+#list {
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 5px);
+    text-align: center;
+    list-style-type: none;
+    font-size: 2em;
+}
+
+#list li {
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+
+#list li:hover {
+    background-color: rgba(232, 85, 85, 0.2);
+}
+
+.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.btn-Delete {
+    border: 1px solid black;
+    cursor: pointer;
+    float: right;
+    padding: 0px 20px;
+}
+
+.btn-Delete:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #fff;
 }
