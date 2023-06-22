@@ -32,13 +32,16 @@ addListItem.addEventListener('click', function (e) {
     inputList.style.display = "flex";
 }, false)
 
+var inputValue = document.getElementById("inputList");
+
 function newElement() {
     var li = document.createElement("li");
-    var inputValue = document.getElementById("input-List").value;
-    var t = document.createTextNode(inputValue);
-    console.log(inputValue);
+    // var inputValue = document.getElementById("input-List").value;
+    var value = inputValue.value;
+    var t = document.createTextNode(value);
+    console.log(value);
     li.appendChild(t);
-    if (inputValue === '') {
+    if (value === '') {
         alert("You must write something!");
     } else {
         document.getElementById("list").appendChild(li);
@@ -57,8 +60,16 @@ function newElement() {
             div.style.display = "none";
         }
     }
+    inputValue.value = '';
 }
 
+inputValue.addEventListener('keypress', function (event) {
+    // Kiểm tra mã phím
+    if (event.keyCode === 13) {
+        event.preventDefault(); // Ngăn chặn hành vi mặc định khi nhấn Enter (submit form)
+        newElement();
+    }
+});
 // var list = document.getElementById('list');
 // var inputText = document.getElementById('input-List');
 // var addButton = document.getElementById('addButton');
