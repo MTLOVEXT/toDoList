@@ -24,3 +24,16 @@ body {
     padding: 0.5em;
     margin: 0.5em;
 }
+
+#btn-input {
+    width: calc(100% - 5px);
+    border: solid red;
+    background-color: rgba(96, 88, 88, 0.836);
+    color: rgb(5, 230, 80);
+    font-size: 2em;
+}
+
+#btn-input:hover {
+    transition: 2s;
+    border-radius: 50%;
+}
