@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    min-width: 250px;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    border: 1px solid red;
+    background-color: rgba(120, 102, 102, 0.5);
+}
+
+.Header {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.Body {
+    border: 1px solid blue;
+    padding: 0.5em;
+    margin: 0.5em;
+}
